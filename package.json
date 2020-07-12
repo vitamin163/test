@@ -1,9 +1,11 @@
 {
-  "name": "needfordrive",
+  "name": "test",
   "version": "1.0.0",
   "description": "carsharing",
   "main": "dist/main.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production",
     "eslint": "npx eslint . --ext js,jsx"
@@ -41,6 +43,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^4.0.4",
+    "gh-pages": "^3.1.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.10"
   },
