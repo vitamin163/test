@@ -7,6 +7,7 @@ const App = () => (
   <>
     <div className="main">Hello World!</div>
     <C />
+    <div className="main">Hello</div>
     <img src={image} alt='' />
   </>
 );
